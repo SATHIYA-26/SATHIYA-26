@@ -16,17 +16,14 @@
 
 ---
 
-## 🚀 About Me
+
 
 ## 🚀 About Me
 
-## 🚀 About Me
-
-I am an Integrated M.Tech Computer Science student at **SSN College of Engineering** with a deep interest in **Artificial Intelligence, Generative AI, Large Language Models, Transformers, Machine Learning, and Backend Engineering**.
+I am an Integrated M.Tech Computer Science student at **SSN College of Engineering** with a deep interest in
+**Artificial Intelligence, Generative AI, Large Language Models, Transformers, Machine Learning, and Backend Engineering**.
 
 My work revolves around building intelligent systems that combine **LLMs, RAG pipelines, AI Agents, LangChain, LangGraph, NLP, and modern backend technologies** to create practical and scalable solutions.
-
-I enjoy designing systems that can reason, retrieve knowledge, automate complex workflows, and transform data into actionable insights. From AI-powered applications and computer vision models to full-stack platforms and backend services, I am driven by the challenge of turning ambitious ideas into impactful products.
 
 Passionate about innovation, continuous learning, and solving real-world problems through technology, I am always exploring new possibilities in **Agentic AI, Autonomous Systems, Generative AI, and Scalable Software Architecture**.
 

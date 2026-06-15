@@ -4,7 +4,6 @@
 
 ### AI Engineer • Backend Developer • Building Agentic Systems
 
-![Profile Views](https://komarev.com/ghpvc/?username=SATHIYA-26&style=for-the-badge&color=blueviolet)
 
 ![](https://readme-typing-svg.demolab.com?font=Fira+Code&size=26&duration=4000&pause=1000&center=true&vCenter=true&width=900&lines=Building+AI-Powered+Applications;FastAPI+%7C+LangGraph+%7C+LLMs;RAG+Systems+and+AI+Agents;Computer+Science+Student+at+SSN;Always+Learning+Always+Building)
 
@@ -21,10 +20,10 @@
 
 I'm an **Integrated M.Tech Computer Science student at SSN College of Engineering**, specializing in **Artificial Intelligence, Machine Learning, Backend Engineering, and System Design**. I build scalable applications and intelligent, agent-driven AI systems — turning ideas into real, working products.
 
-- 🔭 Currently focused on **Agentic AI systems** using LangGraph and LLM-powered backends
-- 🌱 Deepening my skills in **System Design, Redis, Celery, WebSockets, and AWS**
-- ⚡ Enjoy solving real-world problems through clean architecture and thoughtful engineering
-- 🤝 Open to collaborating on AI/ML, RAG pipelines, and full-stack projects
+Currently focused on **Agentic AI systems** using LangGraph and LLM-powered backends
+Deepening my skills in **System Design, Redis, Celery, WebSockets, and AWS**
+Enjoy solving real-world problems through clean architecture and thoughtful engineering
+Open to collaborating on AI/ML, RAG pipelines, and full-stack projects
 
 ---
 
@@ -117,18 +116,6 @@ I'm an **Integrated M.Tech Computer Science student at SSN College of Engineerin
 </div>
 
 ---
-
-## 🏆 GitHub Trophies
-
-<div align="center">
-
-<img src="https://github-profile-trophy.vercel.app/?username=SATHIYA-26&theme=tokyonight&no-frame=true&row=1&column=7"/>
-
-</div>
-
----
-
-<div align="center">
 
 ### 💬 Let's Connect & Build Something Great
 

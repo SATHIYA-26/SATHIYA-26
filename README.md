@@ -15,9 +15,6 @@
   <a href="mailto:sathiyapriyan10001@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/>
   </a>
-  <a href="https://github.com/SATHIYA-26">
-    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
-  </a>
   <img src="https://komarev.com/ghpvc/?username=SATHIYA-26&style=for-the-badge&color=7aa2f7&label=PROFILE+VIEWS" alt="Profile Views"/>
 </p>
 
@@ -246,9 +243,7 @@ My core focus lies in architecting **Agentic AI systems, enterprise RAG pipeline
   <a href="mailto:sathiyapriyan10001@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/>
   </a>
-  <a href="https://github.com/SATHIYA-26">
-    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
-  </a>
+ 
 </p>
 
 

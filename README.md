@@ -27,13 +27,7 @@
 
 ## ⚡ Executive Summary
 
-```yaml
-Name: Sathiya Priyan
-Institution: SSN College of Engineering (Integrated M.Tech Computer Science)
-Core Domains: Agentic AI, Generative AI, Large Language Models, Backend Systems
-Primary Stack: Python, FastAPI, LangGraph, LangChain, PyTorch, PostgreSQL, Docker
-Current Mission: Engineering autonomous multi-agent workflows and high-throughput RAG systems
-```
+
 
 I am an Integrated M.Tech Computer Science student at **SSN College of Engineering** passionate about bridging the gap between cutting-edge Artificial Intelligence research and resilient, scalable software systems.
 

@@ -1,0 +1,359 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 340" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#060913"/>
+    </linearGradient>
+
+    <!-- Border Glow Gradient -->
+    <linearGradient id="borderGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="35%" stop-color="#8b5cf6"/>
+      <stop offset="70%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+
+    <!-- Laser Gradient -->
+    <linearGradient id="laserCyan" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#22d3ee" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+
+    <linearGradient id="laserMagenta" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#d946ef" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#ec4899" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+
+    <!-- Thruster Flame Gradient -->
+    <linearGradient id="thrusterGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="40%" stop-color="#38bdf8"/>
+      <stop offset="80%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#1d4ed8" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="arcadeGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.8" stroke-opacity="0.4"/>
+    </pattern>
+
+    <!-- Filters for Neon Glow -->
+    <filter id="glowCyan" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="glowRed" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="glowShip" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes starTwinkle {
+      0%, 100% { opacity: 0.2; transform: scale(0.8); }
+      50% { opacity: 1; transform: scale(1.3); }
+    }
+
+    @keyframes shipStrafe {
+      0% { transform: translateX(0px); }
+      25% { transform: translateX(180px); }
+      50% { transform: translateX(0px); }
+      75% { transform: translateX(-180px); }
+      100% { transform: translateX(0px); }
+    }
+
+    @keyframes laserShot1 {
+      0% { transform: translateY(0px); opacity: 0; }
+      10% { opacity: 1; }
+      70% { transform: translateY(-160px); opacity: 1; }
+      80% { transform: translateY(-170px); opacity: 0; }
+      100% { transform: translateY(-170px); opacity: 0; }
+    }
+
+    @keyframes laserShot2 {
+      0% { transform: translateY(0px); opacity: 0; }
+      15% { opacity: 1; }
+      75% { transform: translateY(-160px); opacity: 1; }
+      85% { transform: translateY(-170px); opacity: 0; }
+      100% { transform: translateY(-170px); opacity: 0; }
+    }
+
+    @keyframes bugHover1 {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-8px) rotate(2deg); }
+    }
+
+    @keyframes bugHover2 {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(8px) rotate(-2deg); }
+    }
+
+    @keyframes explosionPop {
+      0%, 65% { opacity: 0; transform: scale(0.2); }
+      70% { opacity: 1; transform: scale(1.4); }
+      85% { opacity: 0.8; transform: scale(1.1); }
+      100% { opacity: 0; transform: scale(1.8); }
+    }
+
+    @keyframes floatScore {
+      0%, 68% { opacity: 0; transform: translateY(0px); }
+      75% { opacity: 1; transform: translateY(-10px); }
+      95% { opacity: 1; transform: translateY(-28px); }
+      100% { opacity: 0; transform: translateY(-35px); }
+    }
+
+    @keyframes thrusterPulse {
+      0%, 100% { transform: scaleY(1); opacity: 0.85; }
+      50% { transform: scaleY(1.4); opacity: 1; }
+    }
+
+    @keyframes crtFlicker {
+      0% { opacity: 0.98; }
+      50% { opacity: 1; }
+      100% { opacity: 0.97; }
+    }
+
+    @keyframes scorePulse {
+      0%, 100% { fill: #38bdf8; }
+      50% { fill: #a855f7; }
+    }
+
+    .star { animation: starTwinkle 3s infinite ease-in-out; }
+    .star-fast { animation: starTwinkle 1.8s infinite ease-in-out; }
+    .star-slow { animation: starTwinkle 4.5s infinite ease-in-out; }
+
+    .ship-group { animation: shipStrafe 8s infinite ease-in-out; }
+    .laser-1 { animation: laserShot1 2s infinite ease-out; }
+    .laser-2 { animation: laserShot2 2s infinite ease-out 1s; }
+    
+    .bug-1 { animation: bugHover1 3s infinite ease-in-out; }
+    .bug-2 { animation: bugHover2 3.5s infinite ease-in-out 0.5s; }
+    .bug-3 { animation: bugHover1 2.8s infinite ease-in-out 1s; }
+    .bug-4 { animation: bugHover2 3.2s infinite ease-in-out 1.5s; }
+    .bug-5 { animation: bugHover1 4s infinite ease-in-out 0.8s; }
+
+    .explosion-anim { animation: explosionPop 4s infinite ease-out; transform-origin: 450px 115px; }
+    .score-popup { animation: floatScore 4s infinite ease-out; }
+    .thruster { animation: thrusterPulse 0.4s infinite ease-in-out; transform-origin: center top; }
+    .arcade-card { animation: crtFlicker 0.15s infinite; }
+    .score-val { animation: scorePulse 4s infinite ease-in-out; }
+
+    .arcade-font {
+      font-family: 'Courier New', Courier, 'Lucida Console', Monaco, monospace;
+      font-weight: 800;
+    }
+  </style>
+
+  <!-- Container Box -->
+  <rect x="2" y="2" width="896" height="336" rx="14" fill="url(#bgGrad)" stroke="url(#borderGlow)" stroke-width="2" class="arcade-card"/>
+  
+  <!-- Arcade Grid Background -->
+  <rect x="3" y="3" width="894" height="334" rx="13" fill="url(#arcadeGrid)"/>
+
+  <!-- CRT Scanlines Effect (Subtle) -->
+  <g opacity="0.08">
+    <line x1="10" y1="30" x2="890" y2="30" stroke="#ffffff" stroke-width="1"/>
+    <line x1="10" y1="60" x2="890" y2="60" stroke="#ffffff" stroke-width="1"/>
+    <line x1="10" y1="90" x2="890" y2="90" stroke="#ffffff" stroke-width="1"/>
+    <line x1="10" y1="120" x2="890" y2="120" stroke="#ffffff" stroke-width="1"/>
+    <line x1="10" y1="150" x2="890" y2="150" stroke="#ffffff" stroke-width="1"/>
+    <line x1="10" y1="180" x2="890" y2="180" stroke="#ffffff" stroke-width="1"/>
+    <line x1="10" y1="210" x2="890" y2="210" stroke="#ffffff" stroke-width="1"/>
+    <line x1="10" y1="240" x2="890" y2="240" stroke="#ffffff" stroke-width="1"/>
+    <line x1="10" y1="270" x2="890" y2="270" stroke="#ffffff" stroke-width="1"/>
+    <line x1="10" y1="300" x2="890" y2="300" stroke="#ffffff" stroke-width="1"/>
+  </g>
+
+  <!-- Starfield -->
+  <g fill="#ffffff">
+    <circle cx="80" cy="80" r="1.5" class="star"/>
+    <circle cx="160" cy="180" r="1" class="star-fast"/>
+    <circle cx="220" cy="65" r="1.5" class="star-slow"/>
+    <circle cx="310" cy="140" r="1" class="star"/>
+    <circle cx="390" cy="75" r="2" class="star-fast"/>
+    <circle cx="510" cy="90" r="1" class="star-slow"/>
+    <circle cx="580" cy="170" r="1.5" class="star"/>
+    <circle cx="680" cy="70" r="2" class="star-fast"/>
+    <circle cx="760" cy="150" r="1" class="star"/>
+    <circle cx="830" cy="95" r="1.5" class="star-slow"/>
+    <circle cx="120" cy="230" r="1.5" class="star-fast"/>
+    <circle cx="780" cy="225" r="1.5" class="star-fast"/>
+  </g>
+
+  <!-- ================= TOP ARCADE HUD ================= -->
+  <g>
+    <!-- Top HUD Bar Background -->
+    <rect x="15" y="12" width="870" height="42" rx="8" fill="#0f172a" fill-opacity="0.9" stroke="#334155" stroke-width="1"/>
+    
+    <!-- Title / Mode -->
+    <text x="35" y="38" fill="#38bdf8" class="arcade-font" font-size="13" letter-spacing="1">
+      <tspan fill="#f43f5e">🕹️ </tspan>DEVELOPER MODE: <tspan fill="#4ade80">SHOOT</tspan> • <tspan fill="#a855f7">CODE</tspan> • <tspan fill="#38bdf8">REPEAT</tspan>
+    </text>
+
+    <!-- Score & Multiplier -->
+    <text x="440" y="38" fill="#94a3b8" class="arcade-font" font-size="12">
+      SCORE: <tspan class="score-val arcade-font" font-weight="bold">058,420</tspan>
+    </text>
+
+    <text x="590" y="38" fill="#94a3b8" class="arcade-font" font-size="12">
+      STAGE: <tspan fill="#fbbf24" font-weight="bold">AGENTIC AI</tspan>
+    </text>
+
+    <!-- Lives -->
+    <text x="740" y="38" fill="#94a3b8" class="arcade-font" font-size="12">
+      LIVES: <tspan fill="#f43f5e">👾👾👾</tspan> <tspan fill="#22d3ee" font-size="10">[4X]</tspan>
+    </text>
+  </g>
+
+  <!-- ================= ENEMY BUG INVADERS ================= -->
+  
+  <!-- Bug 1: SyntaxError -->
+  <g transform="translate(130, 80)" class="bug-1">
+    <!-- Bug Body -->
+    <rect x="0" y="0" width="80" height="42" rx="6" fill="#1e1b4b" stroke="#818cf8" stroke-width="1.5" filter="url(#glowCyan)"/>
+    <!-- Pixel Bug Sprite -->
+    <text x="40" y="24" text-anchor="middle" font-size="16">👾</text>
+    <text x="40" y="36" text-anchor="middle" fill="#c7d2fe" class="arcade-font" font-size="8.5">SyntaxError</text>
+    <!-- HP Bar -->
+    <rect x="8" y="-6" width="64" height="3" rx="1.5" fill="#312e81"/>
+    <rect x="8" y="-6" width="45" height="3" rx="1.5" fill="#818cf8"/>
+  </g>
+
+  <!-- Bug 2: NullPointer -->
+  <g transform="translate(280, 85)" class="bug-2">
+    <rect x="0" y="0" width="84" height="42" rx="6" fill="#450a0a" stroke="#f87171" stroke-width="1.5" filter="url(#glowRed)"/>
+    <text x="42" y="24" text-anchor="middle" font-size="16">💀</text>
+    <text x="42" y="36" text-anchor="middle" fill="#fecaca" class="arcade-font" font-size="8.5">NullPointer</text>
+    <rect x="8" y="-6" width="68" height="3" rx="1.5" fill="#7f1d1d"/>
+    <rect x="8" y="-6" width="28" height="3" rx="1.5" fill="#ef4444"/>
+  </g>
+
+  <!-- Bug 3: Target Bug (Under Active Fire!) - MemoryLeak -->
+  <g transform="translate(430, 78)" class="bug-3">
+    <rect x="0" y="0" width="86" height="42" rx="6" fill="#3b0764" stroke="#c084fc" stroke-width="1.5" filter="url(#glowCyan)"/>
+    <text x="43" y="24" text-anchor="middle" font-size="16">⚡</text>
+    <text x="43" y="36" text-anchor="middle" fill="#f3e8ff" class="arcade-font" font-size="8.5">MemoryLeak</text>
+    <rect x="8" y="-6" width="70" height="3" rx="1.5" fill="#581c87"/>
+    <rect x="8" y="-6" width="15" height="3" rx="1.5" fill="#ec4899"/>
+    <!-- Target Lock Crosshair -->
+    <circle cx="43" cy="21" r="22" fill="none" stroke="#22d3ee" stroke-width="1" stroke-dasharray="4,3" opacity="0.8"/>
+  </g>
+
+  <!-- Bug 4: MergeConflict -->
+  <g transform="translate(580, 85)" class="bug-4">
+    <rect x="0" y="0" width="86" height="42" rx="6" fill="#422006" stroke="#fbbf24" stroke-width="1.5" filter="url(#glowCyan)"/>
+    <text x="43" y="24" text-anchor="middle" font-size="16">💥</text>
+    <text x="43" y="36" text-anchor="middle" fill="#fef3c7" class="arcade-font" font-size="8.5">MergeConflict</text>
+    <rect x="8" y="-6" width="70" height="3" rx="1.5" fill="#78350f"/>
+    <rect x="8" y="-6" width="50" height="3" rx="1.5" fill="#f59e0b"/>
+  </g>
+
+  <!-- Bug 5: RaceCondition -->
+  <g transform="translate(730, 80)" class="bug-5">
+    <rect x="0" y="0" width="86" height="42" rx="6" fill="#042f2e" stroke="#2dd4bf" stroke-width="1.5" filter="url(#glowCyan)"/>
+    <text x="43" y="24" text-anchor="middle" font-size="16">⏳</text>
+    <text x="43" y="36" text-anchor="middle" fill="#ccfbf1" class="arcade-font" font-size="8.5">RaceCondition</text>
+    <rect x="8" y="-6" width="70" height="3" rx="1.5" fill="#134e4a"/>
+    <rect x="8" y="-6" width="60" height="3" rx="1.5" fill="#14b8a6"/>
+  </g>
+
+  <!-- ================= HIT EXPLOSION & FLOATING SCORE ================= -->
+  <!-- Target Impact Point (x: 473, y: 110) -->
+  <g class="explosion-anim">
+    <circle cx="473" cy="110" r="22" fill="#ec4899" fill-opacity="0.4" filter="url(#glowRed)"/>
+    <circle cx="473" cy="110" r="12" fill="#fbbf24" fill-opacity="0.8"/>
+    <circle cx="473" cy="110" r="4" fill="#ffffff"/>
+    <!-- Sparkles -->
+    <line x1="473" y1="95" x2="473" y2="85" stroke="#f43f5e" stroke-width="2"/>
+    <line x1="473" y1="125" x2="473" y2="135" stroke="#f43f5e" stroke-width="2"/>
+    <line x1="458" y1="110" x2="448" y2="110" stroke="#38bdf8" stroke-width="2"/>
+    <line x1="488" y1="110" x2="498" y2="110" stroke="#38bdf8" stroke-width="2"/>
+  </g>
+
+  <!-- Floating "+500 FIX" floating score popup -->
+  <g class="score-popup" transform="translate(440, 70)">
+    <rect x="0" y="0" width="78" height="18" rx="4" fill="#065f46" stroke="#34d399" stroke-width="1"/>
+    <text x="39" y="13" text-anchor="middle" fill="#6ee7b7" class="arcade-font" font-size="10" font-weight="bold">+500 FIXED</text>
+  </g>
+
+
+  <!-- ================= PLAYER FIGHTER & LASERS ================= -->
+  <g transform="translate(450, 240)">
+    
+    <!-- Moving Strafe Group -->
+    <g class="ship-group">
+      
+      <!-- Firing Plasma Lasers (Left & Right Cannons) -->
+      <g class="laser-1">
+        <rect x="-18" y="-12" width="4" height="28" rx="2" fill="url(#laserCyan)" filter="url(#glowCyan)"/>
+        <rect x="14" y="-12" width="4" height="28" rx="2" fill="url(#laserCyan)" filter="url(#glowCyan)"/>
+      </g>
+      <g class="laser-2">
+        <rect x="-18" y="-12" width="4" height="28" rx="2" fill="url(#laserMagenta)" filter="url(#glowRed)"/>
+        <rect x="14" y="-12" width="4" height="28" rx="2" fill="url(#laserMagenta)" filter="url(#glowRed)"/>
+      </g>
+
+      <!-- Ship Thruster Flame -->
+      <g class="thruster" transform="translate(0, 24)">
+        <polygon points="-6,0 6,0 0,22" fill="url(#thrusterGrad)" filter="url(#glowCyan)"/>
+        <polygon points="-3,0 3,0 0,14" fill="#ffffff"/>
+      </g>
+
+      <!-- Advanced Cyberpunk Starship Body -->
+      <g filter="url(#glowShip)">
+        <!-- Outer Wing Structure -->
+        <polygon points="0,-24 26,18 16,22 0,14 -16,22 -26,18" fill="#1e293b" stroke="#38bdf8" stroke-width="1.8"/>
+        <!-- Inner Armor Plate -->
+        <polygon points="0,-20 18,12 10,16 0,10 -10,16 -18,12" fill="#0f172a" stroke="#818cf8" stroke-width="1.2"/>
+        <!-- Cockpit Glass Canopy -->
+        <polygon points="0,-16 6,2 0,8 -6,2" fill="#38bdf8" fill-opacity="0.9"/>
+        <circle cx="0" cy="-2" r="2" fill="#ffffff"/>
+        <!-- Wingtip Plasma Cannons -->
+        <rect x="-27" y="4" width="3" height="12" rx="1.5" fill="#22d3ee"/>
+        <rect x="24" y="4" width="3" height="12" rx="1.5" fill="#22d3ee"/>
+      </g>
+
+      <!-- Player Identity Tag -->
+      <rect x="-42" y="28" width="84" height="14" rx="3" fill="#030712" fill-opacity="0.85" stroke="#3b82f6" stroke-width="0.8"/>
+      <text x="0" y="38.5" text-anchor="middle" fill="#93c5fd" class="arcade-font" font-size="8">AI_AGENT.py</text>
+    </g>
+  </g>
+
+  <!-- ================= BOTTOM ARCADE STATUS BAR ================= -->
+  <g>
+    <rect x="15" y="295" width="870" height="34" rx="6" fill="#090d16" stroke="#1e293b" stroke-width="1"/>
+    
+    <!-- Status Indicator Dot -->
+    <circle cx="34" cy="312" r="4.5" fill="#22c55e" filter="url(#glowCyan)"/>
+    <circle cx="34" cy="312" r="2" fill="#ffffff"/>
+    
+    <!-- Status Text -->
+    <text x="48" y="316" fill="#94a3b8" class="arcade-font" font-size="11">
+      STATUS: <tspan fill="#4ade80" font-weight="bold">COMPILED 0 ERRORS</tspan> • <tspan fill="#38bdf8">FASTAPI + LANGGRAPH ENGINE ENGAGED</tspan>
+    </text>
+
+    <!-- Right Controls Info -->
+    <text x="865" y="316" text-anchor="end" fill="#64748b" class="arcade-font" font-size="10.5">
+      <tspan fill="#f59e0b">BUILD</tspan> | <tspan fill="#a855f7">DEPLOY</tspan> | <tspan fill="#06b6d4">SCALE</tspan> 🚀
+    </text>
+  </g>
+</svg>

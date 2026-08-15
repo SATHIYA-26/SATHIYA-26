@@ -251,11 +251,6 @@ My core focus lies in architecting **Agentic AI systems, enterprise RAG pipeline
   </a>
 </p>
 
-<br/>
-
-`
-
-<br/>
 
 ⭐️ *Crafted with precision by [SATHIYA-26](https://github.com/SATHIYA-26) • If you find my projects helpful, consider starring them!*
 

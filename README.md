@@ -203,26 +203,20 @@ My core focus lies in architecting **Agentic AI systems, enterprise RAG pipeline
 
 <div align="center">
 
-<!-- Reliable Tokyo Night GitHub Stats & Streak Grid -->
-<table border="0">
-  <tr>
-    <td align="center" width="50%">
-      <img src="https://github-readme-stats.vercel.app/api?username=SATHIYA-26&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&title_color=7aa2f7&icon_color=7dcfff&text_color=c0caf5&bg_color=161b22" alt="GitHub Stats" width="100%"/>
-    </td>
-    <td align="center" width="50%">
-      <img src="https://streak-stats.demolab.com?user=SATHIYA-26&theme=tokyonight&hide_border=true&background=161b22&stroke=7aa2f7&ring=7aa2f7&fire=ff9e64&currStreakNum=7aa2f7&sideNums=c0caf5&sideLabels=7dcfff" alt="GitHub Streak" width="100%"/>
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SATHIYA-26&layout=compact&theme=tokyonight&hide_border=true&title_color=7aa2f7&text_color=c0caf5&bg_color=161b22" alt="Top Languages" width="500"/>
-    </td>
-  </tr>
-</table>
+<!-- Fast, High-Availability Tokyo Night Stats Cards -->
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=SATHIYA-26&theme=tokyonight" alt="GitHub Profile Details" width="100%"/>
+</p>
+
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=SATHIYA-26&theme=tokyonight" alt="Repos Per Language" width="49%"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=SATHIYA-26&theme=tokyonight" alt="GitHub Stats" width="49%"/>
+</p>
 
 <!-- Activity Graph -->
-<br/>
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=SATHIYA-26&theme=tokyo-night&hide_border=true&area=true&bg_color=161b22&color=7aa2f7&line=7dcfff&point=bb9af7" alt="Activity Graph" width="100%"/>
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=SATHIYA-26&theme=tokyo-night&hide_border=true&area=true" alt="Contribution Graph" width="100%"/>
+</p>
 
 </div>
 
@@ -231,11 +225,7 @@ My core focus lies in architecting **Agentic AI systems, enterprise RAG pipeline
 ## 🐍 Contribution Stream
 
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SATHIYA-26/SATHIYA-26/output/github-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/SATHIYA-26/SATHIYA-26/output/github-snake.svg">
-    <img alt="GitHub Contribution Snake" src="https://raw.githubusercontent.com/SATHIYA-26/SATHIYA-26/output/github-snake-dark.svg" width="100%"/>
-  </picture>
+  <img src="https://raw.githubusercontent.com/SATHIYA-26/SATHIYA-26/output/github-snake-dark.svg" alt="GitHub Contribution Snake" width="100%"/>
 </div>
 
 ---

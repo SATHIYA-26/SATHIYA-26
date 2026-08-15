@@ -254,8 +254,18 @@ My core focus lies in architecting **Agentic AI systems, enterprise RAG pipeline
 <br/>
 
 ```sql
-SELECT status, passion FROM developer_profile WHERE name = 'Sathiya Priyan';
--- Output: [status: 'Ready to build impactful AI systems', passion: 'Lifelong Learner & Problem Solver']
+SELECT status, passion
+FROM developer_profile
+WHERE name = 'Sathiya Priyan';
+
+/*
++-------------------------------------+-----------------------------------+
+| status                              | passion                           |
++-------------------------------------+-----------------------------------+
+| Ready to build impactful AI systems | Lifelong Learner & Problem Solver |
++-------------------------------------+-----------------------------------+
+1 row in set (0.01 sec)
+*/
 ```
 
 <br/>

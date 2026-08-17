@@ -200,9 +200,19 @@ My core focus lies in architecting **Agentic AI systems, enterprise RAG pipeline
 
 <div align="center">
 
+<!-- Fast, High-Availability Tokyo Night Stats Cards -->
 <p align="center">
-  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=SATHIYA-26&show_icons=true&theme=tokyonight&hide_border=true&bg_color=1a1b27&title_color=70a5fd&icon_color=bf91f3&text_color=38bdae" alt="GitHub Stats" height="195"/>
-  <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=SATHIYA-26&layout=compact&theme=tokyonight&hide_border=true&bg_color=1a1b27&title_color=70a5fd&text_color=38bdae" alt="Top Languages" height="195"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=SATHIYA-26&theme=tokyonight" alt="GitHub Profile Details" width="100%"/>
+</p>
+
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=SATHIYA-26&theme=tokyonight" alt="Repos Per Language" width="49%"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=SATHIYA-26&theme=tokyonight" alt="GitHub Stats" width="49%"/>
+</p>
+
+<!-- Activity Graph -->
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=SATHIYA-26&theme=tokyo-night&hide_border=true&area=true" alt="Contribution Graph" width="100%"/>
 </p>
 
 </div>

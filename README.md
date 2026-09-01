@@ -32,14 +32,6 @@ My core focus lies in architecting **Agentic AI systems, enterprise RAG pipeline
 
 ---
 
-## 🎮 Developer Mode: SHOOT • CODE • REPEAT
-
-<div align="center">
-  <p><i>🕹️ Space Defense Subsystem: Neutralizing bugs, race conditions, and latency in real-time.</i></p>
-  <img src="./assets/space-shooter.svg" alt="Space Shooter Arcade Game" width="100%"/>
-</div>
-
----
 
 ## 🎯 Engineering & Research Focus
 
